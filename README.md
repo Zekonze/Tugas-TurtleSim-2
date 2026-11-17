@@ -2,6 +2,9 @@
 
 Package catkin untuk **Waypoint Patrol**, **Safe Explorer**, dan **Hunter**. Satu peluncuran menjalankan turtlesim beserta tiga node buatan sendiri. Dalam mode default, `turtle1` menyelesaikan ketiga level secara berurutan dan berhenti setelah target Hunter terakhir. Warna lintasan berubah pada awal setiap fase sebagai bonus visual.
 
+https://youtu.be/TaF15XkXeHI
+Video Bukti
+
 ## Build dan jalankan
 
 Gunakan terminal pada sesi desktop dengan **ROS 1 Noetic** dan Python 3. Pada Ubuntu 20.04 dengan repositori ROS Noetic yang sudah dikonfigurasi, pasang dependensi berikut jika belum tersedia.
