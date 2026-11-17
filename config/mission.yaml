@@ -1,0 +1,36 @@
+# Koordinat dalam satuan turtlesim. Titik (0, 0) di kiri bawah.
+patrol_waypoints:
+  - [8.0, 5.55]
+  - [8.0, 8.0]
+  - [4.25, 8.0]
+  - [4.25, 5.55]
+
+explore_waypoints:
+  - [1.25, 2.0]
+  - [1.25, 9.8]
+  - [9.8, 9.8]
+  - [9.8, 2.0]
+
+waypoint_tolerance: 0.08
+waypoint_pause: 0.45
+phase_pause: 1.65
+start_delay: 0.8
+
+# Nilai tangkapan harus < 0.5; target diam sejak spawn sampai kill.
+hunter_targets: 3
+hunter_seed: -1  # -1 untuk acak pada setiap peluncuran
+capture_distance: 0.42
+spawn_margin: 1.4
+min_spawn_distance: 3.0
+
+arena_max: 11.0888889
+wall_caution: 1.75
+wall_stop: 0.65
+
+control_hz: 30.0
+k_linear: 3.5
+k_angular: 5.0
+max_linear: 2.65
+max_angular: 4.2
+heading_gate: 0.40
+feedback_timeout: 0.5

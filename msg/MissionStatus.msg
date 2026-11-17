@@ -1,0 +1,11 @@
+time stamp
+uint32 goal_id
+string phase
+uint32 waypoint_index
+uint32 waypoint_total
+float32 distance_to_goal
+bool pose_ready
+bool active
+bool arrived
+float32 x
+float32 y

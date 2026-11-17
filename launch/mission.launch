@@ -1,0 +1,15 @@
+<launch>
+  <arg name="mode" default="all" doc="all, patrol, explore, atau hunter"/>
+  <arg name="autostart" default="true"/>
+  <arg name="config" default="$(find turtle_mission)/config/mission.yaml"/>
+
+  <rosparam command="load" file="$(arg config)" ns="/mission"/>
+
+  <node pkg="turtlesim" type="turtlesim_node" name="turtlesim" required="true"/>
+  <node pkg="turtle_mission" type="wall_sensor.py" name="wall_sensor" required="true"/>
+  <node pkg="turtle_mission" type="motion_controller.py" name="motion_controller" required="true"/>
+  <node pkg="turtle_mission" type="mission_manager.py" name="mission_manager" output="screen" required="true">
+    <param name="mode" type="str" value="$(arg mode)"/>
+    <param name="autostart" type="bool" value="$(arg autostart)"/>
+  </node>
+</launch>

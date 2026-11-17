@@ -1,0 +1,5 @@
+# Nilai kosong memakai mode default dari launch.
+string mode
+---
+bool accepted
+string message
